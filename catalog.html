@@ -24,11 +24,39 @@
           </ul>
         </nav>
         <div class="index-logo">
-          <img src="#" alt="Sedona">
+          <a href="#">
+            <img src="#" alt="Sedona">
+          </a>
         </div>
       </div>
     </header>
     <main class="container">
+      <form class="search-form" action="#" method="post">
+        <h2 class="minor-header-left">Инфраструктура:</h2>
+        <label>Бассейн<input type="checkbox" name="pool" checked>
+        </label>
+        <br>
+        <label>Парковка<input type="checkbox" name="parking">
+        </label>
+        <br>
+        <label>Wi-Fi<input type="checkbox" name="wi-fi">
+        </label>
+        <h2 class="minor-header-right">Тип жилья:</h2>
+        <label>Гостиница<input type="checkbox" name="hotel" checked>
+        </label>
+        <br>
+        <label>Мотель<input type="checkbox" name="motel" checked>
+        </label>
+        <br>
+        <label>Апартаменты<input type="checkbox" name="apartments" checked>
+        </label>
+        <br>
+        <label><input type="range" min="0" max="10000" step="100" value="3000">
+        </label>
+        <br>
+        <input type="sumbit" value="Показать">
+      </form>
+
     </main>
   </body>
 </html>

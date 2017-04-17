@@ -25,7 +25,7 @@
         </nav>
         <div class="index-logo">
           <a href="#">
-            <img src="#" alt="Sedona">
+            <img src="#" alt="Седона">
           </a>
         </div>
       </div>
@@ -33,26 +33,29 @@
     <main class="container">
       <form class="search-form" action="#" method="post">
         <h2 class="minor-header-left">Инфраструктура:</h2>
-        <label>Бассейн<input type="checkbox" name="pool" checked>
-        </label>
+        <label for="pool">Бассейн</label>
+        <input type="checkbox" name="pool" id="pool" checked>
         <br>
-        <label>Парковка<input type="checkbox" name="parking">
-        </label>
+        <label for="parking">Парковка</label>
+        <input type="checkbox" name="parking" id="parking">
         <br>
-        <label>Wi-Fi<input type="checkbox" name="wi-fi">
-        </label>
+        <label for="hotel">Wi-Fi</label>
+        <input type="checkbox" name="wi-fi" id="wi-fi">
         <h2 class="minor-header-right">Тип жилья:</h2>
-        <label>Гостиница<input type="checkbox" name="hotel" checked>
-        </label>
+        <label for="hotel">Гостиница</label>
+        <input type="checkbox" name="hotel" id="hotel" checked>
         <br>
-        <label>Мотель<input type="checkbox" name="motel" checked>
-        </label>
+        <label for="motel">Мотель</label>
+        <input type="checkbox" name="motel" id="motel" checked>
         <br>
-        <label>Апартаменты<input type="checkbox" name="apartments" checked>
-        </label>
+        <label for="apartments">Апартаменты</label>
+        <input type="checkbox" name="apartments" id="apartments" checked>
         <br>
-        <label><input type="range" min="0" max="10000" step="100" value="3000">
-        </label>
+        <h4>Стоимость в сутки (р):</h4>
+        <label for="price-in">От 0</label>
+        <input type="range" name="price-from" id="price-in" min="0" max="10000" step="100" value="3000">
+        <label for="price-out">До 3000</label>
+        <input type="range" name="price-to" id="price-out" min="0" max="10000" step="100" value="0">
         <br>
         <input type="submit" value="Показать">
       </form>
@@ -77,9 +80,9 @@
       </div>
       <div class="search-show">
         <article>
-          <h2>AMARA RESORT & SPA</h2>
-          <span class="article-info">Гостиница</span>
-          <span class="article-info">От 4000 р.</span>
+          <h3>AMARA RESORT & SPA</h3>
+          <p class="article-info">Гостиница</p>
+          <p class="article-info">От 4000 р.</p>
           <img class="article-img" src="#" alt="Фото">
           <a class="more-btn">Подробнее</a>
           <a class="book-btn">Забронировать</a>
@@ -87,9 +90,9 @@
           <span class="rate">Рейтинг: 8,5</span>
         </article>
         <article>
-          <h2>DESERT QUAIL INN</h2>
-          <span class="article-info">Мотель</span>
-          <span class="article-info">От 3000 р.</span>
+          <h3>DESERT QUAIL INN</h3>
+          <p class="article-info">Мотель</p>
+          <p class="article-info">От 3000 р.</p>
           <img class="article-img" src="#" alt="Фото">
           <a class="more-btn">Подробнее</a>
           <a class="book-btn">Забронировать</a>
@@ -97,9 +100,9 @@
           <span class="rate">Рейтинг: 8,9</span>
         </article>
         <article>
-          <h2>VILLAS AT POCO DIABLO</h2>
-          <span class="article-info">Апартаменты</span>
-          <span class="article-info">От 2000 р.</span>
+          <h3>VILLAS AT POCO DIABLO</h3>
+          <p class="article-info">Апартаменты</p>
+          <p class="article-info">От 2000 р.</p>
           <img class="article-img" src="#" alt="Фото">
           <a class="more-btn">Подробнее</a>
           <a class="book-btn">Забронировать</a>

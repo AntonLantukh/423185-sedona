@@ -1,0 +1,29 @@
+body {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(51, 51, 51);
+  font-weight: normal;
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: "PT Sans" "DIN Pro" sans-serif;
+}
+
+.menu-font {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-style: normal;
+  text-transform: capitalize;
+  font-family: "PT Sans" "DIN Pro" sans-serif;
+}
+
+h1 {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-style: normal;
+  text-transform: capitalize;
+  font-family: "PT Sans" "DIN Pro" sans-serif;
+}

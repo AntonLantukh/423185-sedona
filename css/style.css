@@ -1,10 +1,118 @@
 body {
+  min-width: 500px;
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
   color: rgb(51, 51, 51);
   font-weight: normal;
   text-transform: uppercase;
   font-family: "PT Sans" "DIN Pro" sans-serif;
+  background-color: white;
+}
+
+.layout-positioner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.layout-positioner::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.main-navigation {
+    margin-left: 73px;
+    margin-right: 73px;
+    font-size: 14px;
+    line-height: 26px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "PT Sans" "DIN Pro" sans-serif;
+}
+
+.left-navigation {
+    float: left;
+    width: 120px;
+    margin-right: 130px;
+}
+
+.right-navigation {
+    float: right;
+    width: 120px;
+    margin-left: 130px;
+}
+
+.index-logo {
+  float: left;
+  width: 50px;
+  margin-left: 531px;
+  margin-top: 0px;
+}
+
+.promo {
+  width: 510px;
+  float: left;
+  margin-left: 355px;
+  margin-bottom: 59px;
+}
+
+.promo h3{
+  text-align: center;
+}
+
+.promo span{
+  display: block;
+  text-align: center;
+}
+
+.reason-picure {
+   height: 254px;
+   margin-bottom: 62px;
+}
+
+.picture-description {
+  float: left;
+  text-align: center;
+  width: 400px;
+  height: 256px;
+  background-color: rgb(129, 179, 210);
+}
+
+.picure {
+  float: right;
+}
+
+.reason-list {
+  margin-left: 60px;
+  margin-right: 60px;
+  text-align: center;
+  height: 331px;
+}
+
+.reason-point {
+  float: left;
+  width: 290px;
+  margin-right: 70px;
+}
+
+.reason-picutre1 {
+   height: 254px;
+   margin-bottom: 62px;
+}
+
+.picture-description1 {
+  float: right;
+  text-align: center;
+  width: 400px;
+  height: 256px;
+  background-color: rgb(129, 179, 210);
+}
+
+.picture1 {
+  float: left;
 }
 
 h2 {

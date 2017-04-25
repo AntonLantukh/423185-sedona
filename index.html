@@ -7,19 +7,19 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="layout-positioner">
         <nav class="main-navigation">
           <ul>
-            <li>
+            <li class="left-navigation">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="left-navigation">
               <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="right-navigation">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="right-navigation">
               <a href="#">Гостиницы</a>
           </ul>
         </nav>
@@ -30,7 +30,7 @@
         </div>
       </div>
     </header>
-    <main class="container">
+    <main class="layout-positioner">
       <div class="promo-picture">
         <img src ="img/mainphoto.png" alt="О Седоне">
       </div>
@@ -39,33 +39,41 @@
         <span class="promo-speech"> Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</span>
       </div>
       <div class="reason-picture">
-        <img src ="img/usaflag.jpg" alt="Город">
-        <h4>Настоящий городок</h4>
-        <div class="picure-description">-№1-</div>
-        <p class="picure-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="picture-description">
+          <h4>Настоящий городок</h4>
+          <div>-№1-</div>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+          <div class="picture">
+            <img src ="img/usaflag.jpg" alt="Город">
+          </div>
       </div>
       <section class="reason-list">
         <div class="reason-point">
-          <h5>Жилье</h5>
           <img src ="img/house.png" alt="Жилье">
+          <h5>Жилье</h5>
           <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="reason-point">
-          <h5>Еда</h5>
           <img src ="img/food.png" alt="Еда">
+          <h5>Еда</h5>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="reason-point">
-          <h5>Сувениры</h5>
           <img src ="img/present.png" alt="Сувениры">
+          <h5>Сувениры</h5>
           <p>Не только китайского, но и местного производства!</p>
         </div>
       </section>
-      <div class="reason-picture">
-        <h4>Там есть мост дьявола!</h4>
-        <img src ="img/mountains.jpg" alt="Горы">
-        <div class="picure-description">-№2-</div>
-        <p class="picure-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <div class="reason-picture1">
+         <div class="picture-description1">
+           <h4>Там есть мост дьявола!</h4>
+           <div>-№2-</div>
+           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+          <div class="picture1">
+            <img src ="img/mountains.jpg" alt="Горы">
+          </div>
       </div>
       <section class="reason-list">
         <div class="reason-point">
@@ -103,7 +111,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="layout-positioner">
       <section class="hashtag">
         <h3>#Visitsedona</h3>
       </section>

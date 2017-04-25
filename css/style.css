@@ -11,15 +11,19 @@ body {
   background-color: white;
 }
 
-.layout-positioner {
+.container {
     width: 1200px;
     margin: 0 auto;
 }
 
-.layout-positioner::after {
+.clearfix::after {
     display: table;
     content: "";
     clear: both;
+}
+
+.main-header{
+  min-height: 45px;
 }
 
 .main-navigation {
@@ -33,38 +37,32 @@ body {
     font-family: "PT Sans" "DIN Pro" sans-serif;
 }
 
+.navigation-element {
+    width: 115px;
+    list-style: none;
+}
+
 .left-navigation {
     float: left;
-    width: 120px;
     margin-right: 130px;
 }
 
 .right-navigation {
     float: right;
-    width: 120px;
     margin-left: 130px;
 }
 
 .index-logo {
+  position: absolute;
+  left: 750px;
   float: left;
-  width: 50px;
-  margin-left: 531px;
-  margin-top: 0px;
 }
 
 .promo {
   width: 530px;
-  float: left;
-  margin-left: 355px;
   margin-bottom: 70px;
-}
-
-.promo h3{
-  text-align: center;
-}
-
-.promo span{
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -89,7 +87,7 @@ body {
   text-align: center;
   float: left;
   width: 1200px;
-  height: 253px;
+  min-height: 253px;
   margin-bottom: 79px;
 }
 
@@ -100,12 +98,12 @@ body {
   margin-right: 60px;
 }
 
-.reason-picture1 {
+.reason-picture-reverse {
    height: 254px;
-   margin-bottom: 62px;
+   margin-bottom: 0px;
 }
 
-.picture-description1 {
+.picture-description-reverse {
   float: right;
   text-align: center;
   width: 400px;
@@ -113,7 +111,7 @@ body {
   background-color: rgb(129, 179, 210);
 }
 
-.picture1 {
+.picture-reverse {
   float: left;
 }
 
@@ -134,11 +132,10 @@ body {
 }
 
 .if-interest {
-   float: left;
+   margin-left: auto;
+   margin-right: auto;
    text-align: center;
-   margin-left: 382px;
    width: 442px;
-   height: 295px;
 }
 
 .search-block {
@@ -170,11 +167,19 @@ body {
   width: 149px;
 }
 
-.footer-social {
+.social-btn {
   float: left;
-  width: 149px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  width: 50px;
+  padding-right: 5px;
   background-color: rgb(129, 179, 210);
+}
+
+.footer-social img {
+  margin:0 auto;
+  float: left;
 }
 
 .footer-copyright {

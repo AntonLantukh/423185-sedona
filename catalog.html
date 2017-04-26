@@ -7,20 +7,20 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container clearfix">
+      <div class="container">
         <nav class="main-navigation">
           <ul>
-            <li class="left-navigation">
+            <li class="navigation-element left-navigation clearfix">
               <a href="#">Информация</a>
             </li>
-            <li class="left-navigation">
+            <li class="navigation-element left-navigation">
               <a href="#">Фото и видео</a>
             </li>
-            <li class="right-navigation">
-              <a href="#">Карта штата</a>
-            </li>
-            <li class="right-navigation">
+            <li class="navigation-element right-navigation">
               <a href="#">Гостиницы</a>
+            </li>
+            <li class="navigation-element right-navigation">
+              <a href="#">Карта штата</a>
           </ul>
         </nav>
         <div class="index-logo">
@@ -30,8 +30,8 @@
         </div>
       </div>
     </header>
-    <main class="container clearfix">
-      <form class="search-form" action="#" method="post">
+    <main class="container">
+      <form class="search-form-small" action="#" method="post">
         <h2 class="minor-header-left">Инфраструктура:</h2>
         <label for="pool">Бассейн</label>
         <input type="checkbox" name="pool" id="pool" checked>
@@ -54,20 +54,20 @@
         <input type="submit" value="Показать">
       </form>
       <div class="search-result">
-        <h3>Найдено: 3</h3>
+        <h3 class= "sorting-result">Найдено: 3</h3>
         <span class="sorting-header">Сортировка:</span>
         <ul class= "sorting">
-          <li>
+          <li class="sorting-element">
             <a href="#">По цене</a>
           </li>
-          <li>
+          <li class="sorting-element">
             <a href="#">По типу</a>
           </li>
-          <li>
+          <li class= "sorting-element">
             <a href="#">По рейтингу</a>
           </li>
         </ul>
-        <div class="search-button">
+        <div class="search-button clearfix">
           <a class="up-button" href="#">Вверх</a>
           <a class="down-button" href="#">Вниз</a>
         </div>

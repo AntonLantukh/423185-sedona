@@ -234,11 +234,83 @@ body {
 }
 
 .up-button {
-  float: right;
+  display: inline-block;
+  margin-left: 350px;
 }
 
 .down-button {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.hotel-type {
+  height: 152px;
+  border-bottom: 1px solid grey;
+}
+
+.left-article-type {
+  width: 500px;
+  height: 151px;
+  float: left;
+  margin-left: 73px;
+  text-align: left;
+}
+
+.right-article-type {
+  width: 300px;
+  height: 151px;
   float: right;
+  margin-right: 73px;
+  text-align: right;
+  background-image: url(../img/2stars.png);
+  background-repeat: no-repeat;
+}
+
+.hotel-image {
+  float: left;
+  width: 167px;
+}
+
+.hotel-description {
+  float: left;
+  padding-top: 7px;
+}
+
+.article-img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.more-btn {
+  background-color: rgb(129, 179, 210);
+}
+
+.book-btn {
+  background-color: rgb(118, 99, 87);
+}
+
+.rate {
+  background-color: rgb(242, 242, 242);
+  display: inline-block;
+  text-align: right;
+  margin-top: 90px;
+  height: 27px;
+  width: 111px;
+}
+
+.article-info {
+  display: inline-block;
+  text-align: left;
+  padding-right: 10px;
+}
+
+.article-price {
+  display: inline-block;
+  text-align: right;
+}
+
+.stars li {
+  display: inline;
 }
 
 .footer-main {

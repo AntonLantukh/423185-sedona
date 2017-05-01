@@ -96,23 +96,31 @@
       <section class="if-interest-block">
         <div class="if-interest-content">
           <span class="main-question">Заинтересовались?</span>
-          <p class="to-do">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="main-answer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </div>
       </section>
-      <div class="search-block map">
+      <div class="search-block">
+        <div class="search-basis">
           <h6 class="search-name">Поиск гостиницы в Седоне</h6>
           <form class="search-form" action="#" method="post">
-            <label for="date-in">Дата заезда:</label>
-            <input type="date" id="date-in" name="date-in"/>
-            <label for="date-out">Дата выезда:</label>
-            <input type="date" id="date-out" name="date-out"/>
-            <label for="adults">Взрослые:</label>
-            <input type="number" id="adults" name="adults" max="100" min="1" value="2">
-            <label for="children">Дети:</label>
-            <input type="number" id="children" name="children" max="100" min="1" value="0">
-            <input type="submit" value="Найти">
+            <div class="search-row search-first-row">
+              <label for="date-in">Дата заезда:</label>
+              <input type="date" id="date-in" name="date-in"/>
+            </div>
+            <div class="search-row search-second-row">
+              <label for="date-out">Дата выезда:</label>
+              <input type="date" id="date-out" name="date-out"/>
+            </div>
+            <div class="search-row search-third-row">
+              <label for="adults">Взрослые:</label>
+              <input type="number" id="adults" name="adults" max="100" min="1" value="2">
+              <label for="children">Дети:</label>
+              <input type="number" id="children" name="children" max="100" min="1" value="0">
+            </div>
+              <input type="submit" value="Найти">
           </form>
         </div>
+      </div>
     </main>
     <footer class="container">
       <div class="footer-main clearfix">

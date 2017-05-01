@@ -266,23 +266,20 @@ body {
 }
 
 .search-block {
-  position: relative;
-  min-height: 700px;
   background-image: url(../img/map.jpg);
   text-align: center;
 }
 
 .search-basis {
-  position: absolute;
-  min-width: 600px;
-  bottom: 330px;
-  left: 300px;
+  width: 600px;
   background-color: rgb(255, 255, 255);
 }
 
 .search-name {
   display: block;
-  padding-top: 20px;
+  padding: 0;
+  margin: 0;
+  padding-top: 25px;
   min-height: 50px;
   background-color: rgb(118, 99, 87);
   text-align: center;
@@ -291,7 +288,7 @@ body {
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
+  font-family: PT Sans DIN Pro sans-serif;
 }
 
 .search-form {
@@ -300,6 +297,12 @@ body {
 
 .search-row {
   padding: 10px;
+}
+
+.search-first-row input {
+	width: 300px;
+	border: 1px solid #cecece;
+	background: grey;
 }
 
 .search-form-small {

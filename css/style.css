@@ -66,7 +66,7 @@ body {
   height: 70px;
   left: 50%;
   top: 0px;
-  margin-left: -45px;
+  margin-left: -64px;
 }
 
 .promo-picture {
@@ -356,7 +356,7 @@ body {
 }
 
 .search-first-row label {
-  padding-right: 20px;
+  padding-right: 10px;
   position: relative;
 }
 
@@ -366,12 +366,12 @@ body {
   height: 21px;
   background: rgb(242, 242, 242) url(../img/calendar.png) no-repeat;
   position: absolute;
-  right: -340px;
+  right: -355px;
   top: 1px;
 }
 
 .search-second-row label {
-  padding-right: 17px;
+  padding-right: 10px;
   position: relative;
 }
 
@@ -381,16 +381,16 @@ body {
   height: 21px;
   background: rgb(242, 242, 242) url(../img/calendar.png) no-repeat;
   position: absolute;
-  right: -340px;
+  right: -355px;
   top: 1px;
 }
 
 .search-third-row label {
-  padding-right: 38px;
+  padding-right: 29px;
 }
 
 .search-fourth-row label {
-  padding-left: 51px;
+  padding-left: 37px;
   padding-right: 20px;
 }
 
@@ -408,10 +408,22 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
+.date-in, .date-out, .children, .adults {
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+/* Начинается каталог*/
+
 .search-form-small {
   text-align: left;
   margin: 0 auto;
-  height: 280px;
+  min-height: 280px;
   background-image: url("../img/background.png");
 }
 

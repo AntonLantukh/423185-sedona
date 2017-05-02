@@ -25,16 +25,14 @@
               <a href="#">Карта штата</a>
           </ul>
         </nav>
-        <div class="index-logo">
-          <a href="#">
-            <img src="img/logo.png" alt="Седона">
-          </a>
-        </div>
+        <a class="index-logo" href="#">
+          <img src="img/logo.png" alt="Седона">
+        </a>
       </div>
     </header>
     <main class="container">
       <form class="search-form-small" action="#" method="post">
-        <h2 class="minor-header-left">Инфраструктура:</h2>
+        <b class="minor-header-left">Инфраструктура:</b>
         <label for="pool">Бассейн</label>
         <input type="checkbox" name="pool" id="pool" checked>
         <label for="parking">Парковка</label>
@@ -56,7 +54,7 @@
         <input type="submit" value="Показать">
       </form>
       <div class="search-result">
-        <h3 class= "sorting-result">Найдено: 3</h3>
+        <span class= "search-found">Найдено: 3</span>
         <span class="sorting-header">Сортировка:</span>
         <ul class= "sorting">
           <li class="sorting-element">
@@ -79,22 +77,26 @@
               <img class="article-img" src="img/hotel3.jpg" alt="Фото">
             </div>
             <div class="hotel-description">
-              <h3>Amara resort & spa</h3>
-              <div>
+              <h3 class= "hotel-name">Amara resort & spa</h3>
+              <div class="article-text">
                 <div class="article-info">Гостиница</div>
                 <div class="article-price">От 4000 р.</div>
               </div>
-              <a class="btn more-btn">Подробнее</a>
-              <a class="btn book-btn">Забронировать</a>
+              <div class="btn">
+                <a class="more-btn" href="#">Подробнее</a>
+                <a class="book-btn" href="#">Забронировать</a>
+              </div>
             </div>
           </div>
           <div class="right-article-type">
-            <ul class="stars">
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div class="stars-block">
+              <ul class="stars-list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
             <span class="rate">Рейтинг: 8,5</span>
           </div>
         </article>
@@ -104,21 +106,25 @@
               <img class="article-img" src="img/hotel2.jpg" alt="Фото">
             </div>
             <div class="hotel-description">
-              <h3>Desert quail inn</h3>
-              <div>
+              <h3 class= "hotel-name">Desert quail inn</h3>
+              <div class="article-text">
                 <div class="article-info">Мотель</div>
                 <div class="article-price">От 3000 р.</div>
               </div>
-              <a class="btn more-btn">Подробнее</a>
-              <a class="btn book-btn">Забронировать</a>
+              <div class="btn">
+                <a class="more-btn" href="#">Подробнее</a>
+                <a class="book-btn" href="#">Забронировать</a>
+              </div>
             </div>
           </div>
           <div class="right-article-type">
-            <ul class="stars">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+            <div>
+              <ul class="stars-list">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
             <span class="rate">Рейтинг: 8,9</span>
           </div>
         </article>
@@ -128,20 +134,24 @@
               <img class="article-img" src="img/hotel1.jpg" alt="Фото">
             </div>
             <div class="hotel-description">
-              <h3>Villas at poco diablo</h3>
-              <div>
+              <h3 class= "hotel-name">Villas at poco diablo</h3>
+              <div class="article-text">
                 <div class="article-info">Апартаменты</div>
                 <div class="article-price">От 2000 р.</div>
               </div>
-              <a class="btn more-btn">Подробнее</a>
-              <a class="btn book-btn">Забронировать</a>
+              <div class="btn">
+                <a class="more-btn" href="#">Подробнее</a>
+                <a class="book-btn" href="#">Забронировать</a>
+              </div>
             </div>
           </div>
           <div class="right-article-type">
-            <ul class="stars">
-              <li></li>
-              <li></li>
-            </ul>
+            <div>
+              <ul class="stars-list">
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
             <span class="rate">Рейтинг: 9,2</span>
           </div>
         </article>

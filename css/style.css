@@ -750,6 +750,7 @@ body {
   padding-bottom: 20px;
   border-bottom: 1px solid grey;
   position: relative;
+  font-size: 0;
 }
 
 .search-found {
@@ -801,7 +802,6 @@ body {
 
 .up-button {
   display: inline-block;
-  margin-left: 350px;
   font-size: 0;
 }
 

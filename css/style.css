@@ -70,6 +70,8 @@ body {
   margin-left: -64px;
 }
 
+/* Индексная */
+
 .promo-picture {
   background: rgb(129, 179,210) url(../img/mainphoto.jpg);
   width: 1200px;
@@ -281,7 +283,7 @@ body {
   background-color: rgb(255, 255, 255);
   position: absolute;
   left: 315px;
-  top: -90px;
+  top: -120px;
 }
 
 .search-name {
@@ -376,7 +378,7 @@ body {
 }
 
 .search-second-row label {
-  padding-right: 10px;
+  padding-right: 2px;
   position: relative;
 }
 
@@ -436,13 +438,6 @@ body {
   padding-right: 70px;
 }
 
-.search-form-small {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 .search-form-small-left label, input {
   display: block;
 }
@@ -451,22 +446,17 @@ body {
   display: block;
 }
 
-.search-form-small-right label, input {
-  display: block;
-}
-
 .search-form-small-left {
-  flex-basis: 100px;
-  margin-right: 100px;
+  float:left;
 }
 
-.search-form-small-midle {
-  flex-basis: 100px;
+.search-form-small-middle {
+  float: left;
+  margin-left: 100px;
 }
 
 .search-form-small-right {
-  margin: auto;
-  margin-left: 400px;
+  float: right;
 }
 
 .minor-header-form {
@@ -481,8 +471,20 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.search-form-small-basis label {
+.search-form-small-left label {
   padding-bottom: 20px;
+  margin-left: 30px;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.search-form-small-middle label {
+  padding-bottom: 20px;
+  margin-left: 30px;
   font-size: 14px;
   line-height: 21px;
   color: rgb(255, 255, 255);
@@ -511,7 +513,7 @@ body {
   left: -30px;
 }
 
-.search-form-small-basis input[type="checkbox"]:checked + label::before {
+.search-form-small-basis input[type="checkbox"]:checked + label::after {
   content: "";
   position: absolute;
   display: block;
@@ -520,6 +522,122 @@ body {
   background: url(../img/checkboxon.png) no-repeat;
   top: 0px;
   left: -30px;
+}
+
+.filter-range {
+  width: 330px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  font-size: 0;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  display: inline-block;
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: rgb(28, 79, 128);
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 
 .search-result {
@@ -739,6 +857,8 @@ body {
   background-image: url(../img/2stars.png);
   background-repeat: no-repeat;
 }
+
+/*Футер*/
 
 .footer-main {
   min-height: 120px;

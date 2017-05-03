@@ -31,28 +31,36 @@
       </div>
     </header>
     <main class="container">
-      <form class="search-form-small" action="#" method="post">
-        <b class="minor-header-left">Инфраструктура:</b>
-        <label for="pool">Бассейн</label>
-        <input type="checkbox" name="pool" id="pool" checked>
-        <label for="parking">Парковка</label>
-        <input type="checkbox" name="parking" id="parking">
-        <label for="hotel">Wi-fi</label>
-        <input type="checkbox" name="wi-fi" id="wi-fi">
-        <h2 class="minor-header-right">Тип жилья:</h2>
-        <label for="hotel">Гостиница</label>
-        <input type="checkbox" name="hotel" id="hotel" checked>
-        <label for="motel">Мотель</label>
-        <input type="checkbox" name="motel" id="motel" checked>
-        <label for="apartments">Апартаменты</label>
-        <input type="checkbox" name="apartments" id="apartments" checked>
-        <h2>Стоимость в сутки (р):</h2>
-        <label for="price-in">От 0</label>
-        <input type="range" name="price-from" id="price-in" min="0" max="10000" step="100" value="3000">
-        <label for="price-out">До 3000</label>
-        <input type="range" name="price-to" id="price-out" min="0" max="10000" step="100" value="0">
-        <input type="submit" value="Показать">
-      </form>
+      <div class="search-form-small-block">
+        <form class="search-form-small clearfix" action="#" method="post">
+          <div class="search-form-small-basis search-form-small-left">
+            <h2 class="minor-header-form">Инфраструктура:</h2>
+            <input type="checkbox" name="pool" id="pool">
+            <label for="pool">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="wi-fi" id="wi-fi">
+            <label for="wi-fi">Wi-fi</label>
+          </div>
+          <div class="search-form-small-basis search-form-small-middle">
+            <h2 class="minor-header-form">Тип жилья:</h2>
+            <input type="checkbox" name="hotel" id="hotel">
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel">
+            <label for="motel">Мотель</label>
+            <input type="checkbox" name="apartments" id="apartments">
+            <label for="apartments">Апартаменты</label>
+          </div>
+          <div class="search-form-small-basis search-form-small-right">
+            <h2 class="minor-header-form">Стоимость в сутки (р):</h2>
+            <label for="price-in">От 0</label>
+            <input type="range" name="price-from" id="price-in" min="0" max="10000" step="100" value="3000">
+            <label for="price-out">До 3000</label>
+            <input type="range" name="price-to" id="price-out" min="0" max="10000" step="100" value="0">
+            <input type="submit" value="Показать">
+          </div>
+        </form>
+      </div>
       <div class="search-result">
         <span class= "search-found">Найдено: 3</span>
         <span class="sorting-header">Сортировка:</span>
@@ -118,7 +126,7 @@
             </div>
           </div>
           <div class="right-article-type">
-            <div>
+            <div class="stars-block">
               <ul class="stars-list">
                 <li></li>
                 <li></li>
@@ -146,7 +154,7 @@
             </div>
           </div>
           <div class="right-article-type">
-            <div>
+            <div class="stars-block">
               <ul class="stars-list">
                 <li></li>
                 <li></li>

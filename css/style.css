@@ -425,11 +425,101 @@ body {
 
 /* Начинается каталог*/
 
-.search-form-small {
-  text-align: left;
-  margin: 0 auto;
-  min-height: 280px;
+.search-form-small-block  {
   background: grey url("../img/background.png");
+}
+
+.search-form-small {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.search-form-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.search-form-small-left label, input {
+  display: block;
+}
+
+.search-form-small-middle label, input {
+  display: block;
+}
+
+.search-form-small-right label, input {
+  display: block;
+}
+
+.search-form-small-left {
+  flex-basis: 100px;
+  margin-right: 100px;
+}
+
+.search-form-small-midle {
+  flex-basis: 100px;
+}
+
+.search-form-small-right {
+  margin: auto;
+  margin-left: 400px;
+}
+
+.minor-header-form {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.search-form-small-basis label {
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+
+.search-form-small-basis input[type="checkbox"] {
+  display: none;
+}
+
+.search-form-small-basis input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+}
+
+.search-form-small-basis input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/checkboxoff.png) no-repeat;
+  top: 0px;
+  left: -30px;
+}
+
+.search-form-small-basis input[type="checkbox"]:checked + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/checkboxon.png) no-repeat;
+  top: 0px;
+  left: -30px;
 }
 
 .search-result {
@@ -612,7 +702,7 @@ body {
 }
 
 .rate {
-  margin-top: 35px;
+  margin-top: 30px;
   display: inline-block;
   width: 100px;
   height: 25px;
@@ -628,7 +718,8 @@ body {
 }
 
 .stars-block {
-  
+  transform: scaleX(-1);
+  padding-top: 5px;
 }
 
 .stars-list {

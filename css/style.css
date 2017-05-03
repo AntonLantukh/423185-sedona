@@ -247,7 +247,7 @@ body {
 }
 
 .if-interest-content {
-   padding-top: 60px;
+   padding-top: 52px;
    margin-left: auto;
    margin-right: auto;
    text-align: center;
@@ -264,6 +264,7 @@ body {
 }
 
 .if-interest-content p {
+  padding-top: 20px;
   font-size: 14px;
   line-height: 21px;
   color: rgb(51, 51, 51);
@@ -272,28 +273,19 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.search-block {
-  background-image: url(../img/map.jpg);
-  min-height: 471px;
-  position: relative;
-}
-
-.search-basis {
-  width: 568px;
-  background-color: rgb(255, 255, 255);
-  position: absolute;
-  left: 315px;
-  top: -120px;
+.search-open {
+  padding-top: 40px;
 }
 
 .search-name {
   display: block;
-  padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 568px;
   min-height: 56px;
-  vertical-align: middle;
+  padding-top: 30px;
   background-color: rgb(118, 99, 87);
   text-align: center;
+  vertical-align: middle;
   font-size: 21px;
   line-height: 26px;
   color: rgb(255, 255, 255);
@@ -302,14 +294,25 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.search-basis h3 {
-  padding-top: 30px;
+.search-block {
+  min-height: 471px;
+  background-image: url(../img/map.jpg);
+  position: relative;
+}
+
+.search-basis {
+  width: 568px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 315px;
+  top: 0px;
 }
 
 .search-form {
   text-align: left;
   padding-top: 56px;
   padding-left: 56px;
+  padding-right: 56px;
   padding-bottom: 56px;
 }
 
@@ -331,55 +334,78 @@ body {
 }
 
 .search-first-row input {
-	width: 345px;
+  padding: 0;
+  margin: 0;
+  padding-left: 14px;
+  width: 292px;
   height: 38px;
+  padding-right: 38px;
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .search-second-row input {
-	width: 345px;
+  padding: 0;
+  margin: 0;
+  padding-left: 14px;
+  width: 292px;
   height: 38px;
+  padding-right: 38px;
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .search-third-row input {
-	width: 113px;
+  padding: 0;
+  margin: 0;
+	width: 114px;
   height: 38px;
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .search-fourth-row input {
-	width: 113px;
+  padding: 0;
+  margin: 0;
+	width: 114px;
   height: 38px;
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 .search-first-row label {
-  padding-right: 10px;
+  padding-right: 19px;
   position: relative;
-}
-
-.search-first-row label::before {
-  content: "";
-  width: 21px;
-  height: 21px;
-  background: rgb(242, 242, 242) url(../img/calendar.png) no-repeat;
-  position: absolute;
-  right: -355px;
-  top: 1px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .search-second-row label {
-  padding-right: 2px;
   position: relative;
+  padding-right: 16px;
+  position: relative;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .search-second-row label::before {
@@ -393,12 +419,27 @@ body {
 }
 
 .search-third-row label {
-  padding-right: 29px;
+  padding-right: 37px;
+  position: relative;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .search-fourth-row label {
-  padding-left: 37px;
   padding-right: 20px;
+  padding-left: 48px;
+  padding-right: 20px;
+  position: relative;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .search-form-button input {
@@ -438,11 +479,11 @@ body {
   padding-right: 70px;
 }
 
-.search-form-small-left label, input {
+.search-form-small-left label, .search-form-small-left input {
   display: block;
 }
 
-.search-form-small-middle label, input {
+.search-form-small-middle label, .search-form-small-middle input {
   display: block;
 }
 
@@ -925,138 +966,6 @@ body {
     background-position: 3px -68px;
 }
 
-h2 {
-  font-size: 16px;
-  line-height: 21px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-h3 {
-  font-size: 21px;
-  line-height: 26px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-h4 {
-  font-size: 21px;
-  line-height: 21px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-h5 {
-  font-size: 21px;
-  line-height: 21px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-h6 {
-  font-size: 21px;
-  line-height: 26px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.main-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.promo-speech {
-  font-size: 14px;
-  line-height: 26px;
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.picure-description {
-  font-size: 14px;
-  line-height: 21px;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.main-question {
-  font-size: 30px;
-  line-height: 24px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.to-do {
-  font-size: 14px;
-  line-height: 24px;
-  color: rgb(51, 51, 51);
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.sorting-header {
-  font-size: 12px;
-  line-height: 18px;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-}
-
-.sorting {
-  font-size: 12px;
-  line-height: 18px;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  opacity: 0.3;
-}
-
-.rate {
-  font-size: 14px;
-  line-height: 21px;
-  color: rgb(102, 102, 102);
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.btn {
-  font-size: 14px;
-  line-height: 21px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.search-form {
-  font-size: 14px;
-  line-height: 26px;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
-}
-
-.html-academy {
-  font-size: 14px;
-  line-height: 26px;
-  color: rgb(0, 0, 0);
-  text-transform: uppercase;
-  font-family: "PT Sans" "DIN Pro" sans-serif;
+.footer-opcaity {
+  background-color: rgba(255, 255, 255, 0.9);
 }

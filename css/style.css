@@ -347,6 +347,11 @@ body {
   -moz-appearance: textfield;
 }
 
+.search-first-row input:hover {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
 .search-second-row input {
   padding: 0;
   margin: 0;
@@ -357,6 +362,11 @@ body {
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.search-second-row input:hover {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
 }
@@ -373,6 +383,11 @@ body {
   -moz-appearance: textfield;
 }
 
+.search-third-row input:hover {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
 .search-fourth-row input {
   padding: 0;
   margin: 0;
@@ -381,6 +396,11 @@ body {
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.search-fourth-row input:hover {
   -webkit-appearance: textfield;
   -moz-appearance: textfield;
 }

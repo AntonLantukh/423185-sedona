@@ -930,15 +930,37 @@ input:-ms-input-placeholder {
     display: inline-block;
     font-size: 12px;
     line-height: 18px;
-    color: rgb(0, 0, 0);
     text-transform: uppercase;
-    opacity: 0.3;
 }
 
 .sorting-element {
   display: inline-block;
   margin-right: 30px;
   vertical-align: baseline;
+}
+
+.sorting-element a {
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
+.sorting-element a:hover {
+  color: rgb(129, 179, 210);
+  text-decoration: none;
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
+.sorting-element a:focus {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border: none;
+}
+
+.sorting-element a:active {
+  color: rgb(129, 179, 210);
+  text-decoration: none;
+  border: none;
 }
 
 .search-button {

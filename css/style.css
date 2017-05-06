@@ -8,13 +8,22 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
-  background-color: white;
+  background-color: rgb(242, 242, 242);
+}
+
+.wrapper {
+  box-shadow:
+    1px 0px 8px lightgrey,
+    -1px 0px 8px lightgrey;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     position: relative;
+    background-color: rgb(255, 255, 255);
 }
 
 .clearfix::after {
@@ -45,7 +54,7 @@ body {
 }
 
 .main-navigation a:focus {
-  color: rgb(242, 242, 242);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .main-navigation a:hover {
@@ -85,9 +94,11 @@ body {
 /* Индексная */
 
 .promo-picture {
-  background: rgb(129, 179,210) url(../img/mainphoto.jpg);
+  background-color: rgb(129, 179,210);
+  background-image: url(../img/mainphoto.jpg);
+  background-position: center -50px;
   width: 1200px;
-  height: 564px;
+  height: 514px;
 }
 
 .promo-block {
@@ -307,7 +318,7 @@ body {
 }
 
 .search-block {
-  min-height: 471px;
+  min-height: 592px;
   background-image: url(../img/map.jpg);
   position: relative;
 }
@@ -518,6 +529,16 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
+  cursor: pointer;
+}
+
+.search-form-button input:hover {
+  background-color: rgb(102, 158, 192);
+}
+
+.search-form-button input:focus {
+  background-color: rgb(84, 150, 189);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .date-in, .date-out, .children, .adults {
@@ -753,12 +774,22 @@ body {
   font-size: 0;
 }
 
+.search-result-left {
+  float: left;
+  margin-left: 73px;
+}
+
+.search-result-right {
+  float: right;
+  margin-right: 73px;
+  padding-top: 11px;
+}
+
 .search-found {
   margin: 0;
   padding: 0;
   display: inline-block;
   margin-right: 50px;
-  margin-left: 73px;
   vertical-align: baseline;
   font-size: 21px;
   line-height: 26px;
@@ -800,39 +831,93 @@ body {
   margin-right: 73px;
 }
 
-.up-button {
-  display: inline-block;
-  font-size: 0;
-}
-
-.up-button::before {
-  content: "";
-  position: absolute;
-  width: 0;
-	height: 0;
-  top: 50%;
-  left: 1100px;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-bottom: 10px solid rgb(242, 242, 242);
-}
-
 .down-button {
-  display: inline-block;
-  padding-right: 5px;
+  float: right;
+  display: block;
+  height: 25px;
+  width: 20px;
   font-size: 0;
 }
 
 .down-button::before {
   content: "";
   position: absolute;
+  right: 78px;
+  top: 39px;
   width: 0;
 	height: 0;
-  top: 50%;
-  left: 1120px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
-	border-top: 10px solid rgb(242, 242, 242);
+	border-top: 10px solid rgb(204, 204, 204);
+}
+
+.down-button:hover::before {
+  content: "";
+  position: absolute;
+  right: 78px;
+  top: 39px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid rgb(0, 0, 0);
+}
+
+.down-button:focus::before {
+  content: "";
+  position: absolute;
+  right: 78px;
+  top: 39px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid rgb(129, 179, 210);
+}
+
+.up-button {
+  float: right;
+  display: block;
+  height: 25px;
+  width: 20px;
+  font-size: 0;
+  margin-right: 8px;
+}
+
+.up-button::before {
+  content: "";
+  position: absolute;
+  right: 107px;
+  top: 39px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid rgb(204, 204, 204);
+}
+
+.up-button:hover::before {
+  content: "";
+  position: absolute;
+  right: 107px;
+  top: 39px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid rgb(0, 0, 0);
+}
+
+.up-button:focus::before {
+  content: "";
+  position: absolute;
+  right: 107px;
+  top: 39px;
+  width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 10px solid rgb(129, 179, 210);
 }
 
 .hotel-type {
@@ -872,7 +957,7 @@ body {
 }
 
 .hotel-name:focus {
-  color: rgb(242, 242, 242);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-name:hover {
@@ -900,13 +985,13 @@ body {
   margin-right: 5px;
   width: 120px;
   height: 25px;
-  background-color: rgba(129, 179, 210, 0.8);
+  background-color: rgba(129, 179, 210);
   text-align: center;
   vertical-align: middle;
   padding-top: 4px;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -914,12 +999,12 @@ body {
 
 .more-btn:hover {
   color: rgba(255, 255, 255);
-  background-color: rgb(129, 179, 210);
+  background-color: rgb(102, 158, 192);
 }
 
 .more-btn:focus {
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgb(129, 179, 210);
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(84, 150, 189);
 }
 
 .book-btn {
@@ -927,13 +1012,13 @@ body {
   display: inline-block;
   width: 150px;
   height: 25px;
-  background-color: rgba(118, 99, 87, 0.8);
+  background-color: rgba(118, 99, 87);
   text-align: center;
   vertical-align: middle;
   padding-top: 4px;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -941,12 +1026,12 @@ body {
 
 .book-btn:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(118, 99, 87);
+  background-color: rgb(96, 78, 67);
 }
 
 .book-btn:focus {
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgb(118, 99, 87);
+  color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(80, 62, 51);
 }
 
 .right-article-type {
@@ -1004,6 +1089,13 @@ body {
   align-items: center;
 }
 
+.footer-opacity {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-width: 1200px;
+}
+
 .hashtag {
   flex-basis: 220px;
   padding: 0;
@@ -1044,6 +1136,7 @@ body {
   font-size: 0;
   text-decoration: none;
   vertical-align: top;
+  text-align: center;
   background-color: rgb(129, 179, 210);
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;

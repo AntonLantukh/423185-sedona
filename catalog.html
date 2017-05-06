@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper">
     <header class="main-header">
       <div class="container">
         <nav class="main-navigation">
@@ -70,22 +71,26 @@
           </div>
         </form>
       </div>
-      <div class="search-result">
-        <span class= "search-found">Найдено: 3</span>
-        <span class="sorting-header">Сортировка:</span>
-        <ul class= "sorting">
-          <li class="sorting-element">
-            <a href="#">По цене</a>
-          </li>
-          <li class="sorting-element">
-            <a href="#">По типу</a>
-          </li>
-          <li class= "sorting-element">
-            <a href="#">По рейтингу</a>
-          </li>
-        </ul>
-          <a class="up-button" href="#">Вверх</a>
+      <div class="search-result clearfix">
+        <div class="search-result-left">
+          <span class= "search-found">Найдено: 3</span>
+          <span class="sorting-header">Сортировка:</span>
+          <ul class= "sorting">
+            <li class="sorting-element">
+              <a href="#">По цене</a>
+            </li>
+            <li class="sorting-element">
+              <a href="#">По типу</a>
+            </li>
+            <li class= "sorting-element">
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </div>
+        <div class="search-result-right clearfix">
           <a class="down-button" href="#">Вниз</a>
+          <a class="up-button" href="#">Вверх</a>
+        </div>
       </div>
       <div class="search-show">
         <article class="hotel-type clearfix">
@@ -192,5 +197,6 @@
         </section>
       </div>
     </footer>
+  </div>
   </body>
 </html>

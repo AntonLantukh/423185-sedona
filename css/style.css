@@ -281,7 +281,7 @@ body {
 }
 
 .if-interest-block {
-  min-height: 292px;
+  padding-bottom: 3px;
   background-color: rgb(255, 255, 255);
 }
 

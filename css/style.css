@@ -420,6 +420,7 @@ body {
   transform: translate(-50%, -50%);
   background-image: url(../img/sprite.png);
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .calendar-first::before {
@@ -686,9 +687,9 @@ input:-ms-input-placeholder {
 }
 
 .search-form-small {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 70px;
+  padding-top: 26px;
+  padding-bottom: 6px;
+  padding-left: 71px;
   padding-right: 70px;
 }
 
@@ -706,7 +707,7 @@ input:-ms-input-placeholder {
 
 .search-form-small-middle {
   float: left;
-  margin-left: 100px;
+  margin-left: 119px;
 }
 
 .search-form-small-right {
@@ -716,7 +717,7 @@ input:-ms-input-placeholder {
 .minor-header-form {
   padding: 0;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   font-size: 16px;
   line-height: 21px;
   color: rgb(255, 255, 255);
@@ -726,7 +727,8 @@ input:-ms-input-placeholder {
 }
 
 .search-form-small-left label {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  padding-left: 11px;
   margin-left: 30px;
   font-size: 14px;
   line-height: 21px;
@@ -737,7 +739,8 @@ input:-ms-input-placeholder {
 }
 
 .search-form-small-middle label {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  padding-left: 11px;
   margin-left: 30px;
   font-size: 14px;
   line-height: 21px;
@@ -779,7 +782,7 @@ input:-ms-input-placeholder {
 }
 
 .filter-range {
-  width: 330px;
+  width: 320px;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
 }
@@ -793,7 +796,7 @@ input:-ms-input-placeholder {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 31px;
   margin-bottom: 20px;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
@@ -814,14 +817,14 @@ input:-ms-input-placeholder {
 .price-controls label {
   display: inline-block;
   font-size: 14px;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
   cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 83px;
   padding-left: 65px;
 }
 
@@ -877,8 +880,8 @@ input:-ms-input-placeholder {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin-left: 86px;
+  padding: 7px 30px;
   font-size: 14px;
   line-height: 20px;
   color: rgb(255, 255, 255);
@@ -895,9 +898,9 @@ input:-ms-input-placeholder {
 }
 
 .search-result {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(204, 204, 204);
   position: relative;
   font-size: 0;
 }
@@ -917,7 +920,7 @@ input:-ms-input-placeholder {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: 47px;
   vertical-align: baseline;
   font-size: 21px;
   line-height: 26px;
@@ -992,8 +995,8 @@ input:-ms-input-placeholder {
 .down-button::before {
   content: "";
   position: absolute;
-  right: 78px;
-  top: 35px;
+  right: 74px;
+  top: 39px;
   width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
@@ -1036,8 +1039,8 @@ input:-ms-input-placeholder {
 .up-button::before {
   content: "";
   position: absolute;
-  right: 99px;
-  top: 35px;
+  right: 97px;
+  top: 39px;
   width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
@@ -1070,9 +1073,9 @@ input:-ms-input-placeholder {
 }
 
 .hotel-type {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid grey;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgb(204, 204, 204);
 }
 
 .left-article-type {
@@ -1094,7 +1097,7 @@ input:-ms-input-placeholder {
   display: block;
   margin: 0;
   padding: 0;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
   text-decoration: none;
   font-size: 21px;
   line-height: 26px;
@@ -1114,27 +1117,39 @@ input:-ms-input-placeholder {
 }
 
 .article-text {
-  padding-bottom: 10px;
+  padding-bottom: 13px;
 }
 
 .article-info {
   display: inline-block;
   text-align: left;
-  padding-right: 10px;
 }
 
-.article-price {
+.article-price-amara {
   display: inline-block;
   text-align: right;
+  padding-left: 34px;
+}
+
+.article-price-desert {
+  display: inline-block;
+  text-align: right;
+  padding-left: 60px;
+}
+
+.article-price-villas {
+  display: inline-block;
+  text-align: right;
+  padding-left: 17px;
 }
 
 .more-btn {
   text-decoration: none;
   display: inline-block;
-  margin-right: 5px;
-  width: 120px;
+  margin-right: 3px;
+  width: 109px;
   height: 25px;
-  background-color: rgba(129, 179, 210);
+  background-color: rgb(129, 179, 210);
   text-align: center;
   vertical-align: middle;
   padding-top: 4px;
@@ -1159,15 +1174,15 @@ input:-ms-input-placeholder {
 .book-btn {
   text-decoration: none;
   display: inline-block;
-  width: 150px;
+  width: 142px;
   height: 25px;
-  background-color: rgba(118, 99, 87);
+  background-color: rgb(118, 99, 87);
   text-align: center;
   vertical-align: middle;
   padding-top: 4px;
   font-size: 14px;
   line-height: 21px;
-  color: rgba(255, 255, 255);
+  color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1186,18 +1201,17 @@ input:-ms-input-placeholder {
 .right-article-type {
   float: right;
   margin-right: 73px;
-
 }
 
 .rate {
   margin-top: 30px;
   display: inline-block;
-  width: 100px;
+  width: 109px;
   height: 25px;
   background-color: rgb(242, 242, 242);
   text-align: center;
   vertical-align: middle;
-  padding-top: 4px;
+  padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
   color: rgb(102, 102, 102);
@@ -1231,7 +1245,9 @@ input:-ms-input-placeholder {
 /*Футер*/
 
 .footer-main {
-  padding-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  font-size: 0;
 }
 
 .footer-opacity {
@@ -1246,7 +1262,7 @@ input:-ms-input-placeholder {
   width: 300px;
   padding: 0;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 9px;
   margin-left: 133px;
   font-size: 21px;
   line-height: 26px;
@@ -1259,20 +1275,21 @@ input:-ms-input-placeholder {
 .footer-social {
   float: left;
   width: 300px;
-  padding-top: 6px;
+  padding-bottom: 9px;
   margin-left: 92px;
 }
 
 .footer-copyright {
   float: right;
   width: 300px;
-  padding-top: 50px;
-  margin-right: 6px;
+  padding-top: 6px;
 }
 
 .html-academy {
   display: inline-block;
-  padding-right: 10px;
+  padding-right: 8px;
+  padding-left: 3px;
+  padding-top: 5px;
   font-size: 14px;
   line-height: 26px;
   color: rgb(0, 0, 0);
@@ -1320,7 +1337,7 @@ input:-ms-input-placeholder {
 
 .social-btn {
   display: inline-block;
-  margin-right: 3px;
+  margin-right: 6px;
   width: 46px;
   height: 48px;
   font-size: 0;

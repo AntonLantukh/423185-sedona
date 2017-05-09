@@ -389,6 +389,7 @@ body {
 }
 
 .search-first-row input {
+  position: relative;
   width: 296px;
   height: 38px;
   margin: 0;

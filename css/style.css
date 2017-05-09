@@ -185,7 +185,7 @@ body {
   display: flex;
   justify-content: space-around;
   padding-top: 58px;
-  padding-bottom: 78px;
+  padding-bottom: 82px;
 }
 
 .reason-point {
@@ -203,6 +203,15 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+}
+
+.reason-point:nth-child(2) .reason-header {
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+.reason-point:nth-child(3) .reason-header {
+  padding-bottom: 4px;
 }
 
 .picture-reason-reverse {
@@ -282,7 +291,7 @@ body {
 }
 
 .if-interest-block {
-  padding-bottom: 3px;
+  padding-bottom: 0px;
   background-color: rgb(255, 255, 255);
 }
 
@@ -354,16 +363,16 @@ body {
 }
 
 .search-form {
-  padding-top: 56px;
+  padding-top: 58px;
   padding-bottom: 55px;
-  padding-left: 57px;
-  padding-right: 54px;
+  padding-left: 56px;
+  padding-right: 0px;
   text-align: left;
   font-size: 0px;
 }
 
 .search-first-row {
-  padding-bottom: 31px;
+  padding-bottom: 29px;
 }
 
 .search-second-row {
@@ -381,7 +390,7 @@ body {
 
 .search-first-row input {
   width: 296px;
-  height: 35px;
+  height: 38px;
   margin: 0;
   padding: 0;
   padding-left: 12px;
@@ -397,14 +406,14 @@ body {
 
 .search-first-row input:focus {
   width: 292px;
-  height: 31px;
+  height: 34px;
 	background: rgb(255, 255, 255);
   border: 2px solid rgb(235, 235, 235);
 }
 
 .calendar {
   position: absolute;
-  right: 46px;
+  right: 54px;
   display: inline-block;
   vertical-align: top;
   width: 39px;
@@ -479,14 +488,14 @@ body {
 
 .search-second-row input:focus {
   width: 292px;
-  height: 31px;
+  height: 34px;
   background: rgb(255, 255, 255);
   border: 2px solid rgb(235, 235, 235);
 }
 
 .search-third-row input {
   width: 25px;
-  height: 35px;
+  height: 38px;
   margin: 0;
   padding: 0;
   padding-left: 55px;
@@ -496,9 +505,20 @@ body {
   border: none;
 }
 
+.search-third-row input:hover {
+	background: rgb(235, 235, 235);
+}
+
+.search-third-row input:focus {
+  width: 21px;
+  height: 34px;
+	background: rgb(255, 255, 255);
+  border: 2px solid rgb(235, 235, 235);
+}
+
 .search-third-row .plus-button {
   position: absolute;
-  right: 273px;
+  right: 285px;
   display: inline-block;
   vertical-align: top;
   width: 39px;
@@ -512,7 +532,7 @@ body {
 
 .search-fourth-row .plus-button {
   position: absolute;
-  right: 43px;
+  right: 53px;
   display: inline-block;
   vertical-align: top;
   width: 39px;
@@ -526,7 +546,7 @@ body {
 
 .search-third-row .minus-button {
   position: absolute;
-  right: 121px;
+  right: 127px;
   display: inline-block;
   vertical-align: top;
   width: 39px;
@@ -540,7 +560,7 @@ body {
 
 .search-fourth-row .minus-button {
   position: absolute;
-  right: 348px;
+  right: 360px;
   display: inline-block;
   vertical-align: top;
   width: 39px;
@@ -596,7 +616,7 @@ body {
 
 .search-fourth-row input {
   width: 25px;
-  height: 35px;
+  height: 38px;
   margin: 0;
   padding: 0;
   padding-left: 55px;
@@ -606,9 +626,20 @@ body {
   border: none;
 }
 
+.search-fourth-row input:hover {
+	background: rgb(235, 235, 235);
+}
+
+.search-fourth-row input:focus {
+  width: 21px;
+  height: 34px;
+	background: rgb(255, 255, 255);
+  border: 2px solid rgb(235, 235, 235);
+}
+
 .search-first-row label {
   position: relative;
-  padding-right: 22px;
+  padding-right: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -619,7 +650,7 @@ body {
 
 .search-second-row label {
   position: relative;
-  padding-right: 17px;
+  padding-right: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -630,7 +661,7 @@ body {
 
 .search-third-row label {
   position: relative;
-  padding-right: 40px;
+  padding-right: 39px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -641,8 +672,8 @@ body {
 
 .search-fourth-row label {
   position: relative;
-  padding-left: 51px;
-  padding-right: 26px;
+  padding-left: 54px;
+  padding-right: 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -1280,7 +1311,7 @@ input:-ms-input-placeholder {
   margin: 0;
   margin-left: 133px;
   padding: 0;
-  padding-top: 9px;
+  padding-top: 13px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 21px;
   line-height: 26px;
@@ -1293,7 +1324,7 @@ input:-ms-input-placeholder {
   float: left;
   width: 300px;
   margin-left: 92px;
-  padding-bottom: 9px;
+  padding-bottom: 6px;
 }
 
 .footer-copyright {
@@ -1318,7 +1349,7 @@ input:-ms-input-placeholder {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 119px;
+  width: 112px;
   height: 43px;
   font-size: 0;
   text-decoration: none;

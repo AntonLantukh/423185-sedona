@@ -364,7 +364,7 @@ body {
 
 .search-form {
   padding-top: 58px;
-  padding-bottom: 55px;
+  padding-bottom: 52px;
   padding-left: 56px;
   padding-right: 0px;
   text-align: left;
@@ -372,20 +372,27 @@ body {
 }
 
 .search-first-row {
+  height: 42px;
   padding-bottom: 29px;
 }
 
 .search-second-row {
-  padding-bottom: 30px;
+  height: 42px;
+  padding-bottom: 29px;
 }
 
 .search-third-row {
   display: inline-block;
+  width: 255px;
+  height: 42px;
   padding-bottom: 54px;
 }
 
 .search-fourth-row {
   display: inline-block;
+  width: 206px;
+  height: 42px;
+  padding-bottom: 54px;
 }
 
 .search-first-row input {
@@ -395,7 +402,7 @@ body {
   margin: 0;
   padding: 0;
   padding-left: 12px;
-  padding-right: 35px;
+  padding-right: 38px;
 	background: rgb(242, 242, 242);
   box-shadow: none;
   border: none;
@@ -673,7 +680,7 @@ body {
 
 .search-fourth-row label {
   position: relative;
-  padding-left: 54px;
+  padding-left: 25px;
   padding-right: 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -681,6 +688,11 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+}
+
+.search-form-button {
+  width: 458px;
+  height: 58px;
 }
 
 .search-form-button input {

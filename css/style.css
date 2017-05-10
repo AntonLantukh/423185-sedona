@@ -363,8 +363,8 @@ body {
 }
 
 .search-form {
-  padding-top: 58px;
-  padding-bottom: 52px;
+  padding-top: 60px;
+  padding-bottom: 55px;
   padding-left: 56px;
   padding-right: 0px;
   text-align: left;
@@ -373,26 +373,26 @@ body {
 
 .search-first-row {
   height: 42px;
-  padding-bottom: 29px;
+  padding-bottom: 24px;
 }
 
 .search-second-row {
   height: 42px;
-  padding-bottom: 29px;
+  padding-bottom: 27px;
 }
 
 .search-third-row {
   display: inline-block;
   width: 255px;
   height: 42px;
-  padding-bottom: 54px;
+  padding-bottom: 49px;
 }
 
 .search-fourth-row {
   display: inline-block;
   width: 206px;
   height: 42px;
-  padding-bottom: 54px;
+  padding-bottom: 49px;
 }
 
 .search-first-row input {
@@ -669,7 +669,7 @@ body {
 
 .search-third-row label {
   position: relative;
-  padding-right: 39px;
+  padding-right: 40px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -879,7 +879,7 @@ input:-ms-input-placeholder {
 
 .price-controls {
   position: relative;
-  height: 31px;
+  height: 33px;
   margin-bottom: 20px;
   font-size: 0;
   border: 2px solid rgb(255, 255, 255);
@@ -928,7 +928,7 @@ input:-ms-input-placeholder {
 }
 
 .range-controls .scale {
-  height: 2px;
+  height: 4px;
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -965,7 +965,7 @@ input:-ms-input-placeholder {
 .btn-transparent {
   display: block;
   margin-left: 86px;
-  padding: 7px 30px;
+  padding: 6px 33px;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -1158,7 +1158,7 @@ input:-ms-input-placeholder {
 
 .hotel-type {
   padding-top: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid rgb(204, 204, 204);
 }
 
@@ -1231,7 +1231,7 @@ input:-ms-input-placeholder {
   display: inline-block;
   vertical-align: middle;
   width: 109px;
-  height: 25px;
+  height: 24px;
   margin-right: 3px;
   padding-top: 4px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1259,7 +1259,7 @@ input:-ms-input-placeholder {
   display: inline-block;
   vertical-align: middle;
   width: 142px;
-  height: 25px;
+  height: 24px;
   padding-top: 4px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;

@@ -406,18 +406,18 @@ body {
 }
 
 .search-first-row input:focus {
-  width: 292px;
+  width: 296px;
   height: 34px;
+  padding-left: 10px;
 	background: rgb(255, 255, 255);
   border: 2px solid rgb(235, 235, 235);
 }
 
 .calendar {
   position: absolute;
-  right: 54px;
+  right: 65px;
   display: inline-block;
   vertical-align: top;
-  width: 39px;
   height: 38px;
   text-decoration: none;
   font-size: 0;
@@ -488,8 +488,9 @@ body {
 }
 
 .search-second-row input:focus {
-  width: 292px;
+  width: 296px;
   height: 34px;
+  padding-left: 10px;
   background: rgb(255, 255, 255);
   border: 2px solid rgb(235, 235, 235);
 }
@@ -511,18 +512,19 @@ body {
 }
 
 .search-third-row input:focus {
-  width: 21px;
+  width: 25px;
   height: 34px;
+  padding-left: 53px;
+  padding-right: 33px;
 	background: rgb(255, 255, 255);
   border: 2px solid rgb(235, 235, 235);
 }
 
 .search-third-row .plus-button {
   position: absolute;
-  right: 285px;
+  right: 296px;
   display: inline-block;
   vertical-align: top;
-  width: 39px;
   height: 38px;
   font-size: 0;
   text-decoration: none;
@@ -533,10 +535,9 @@ body {
 
 .search-fourth-row .plus-button {
   position: absolute;
-  right: 53px;
+  right: 63px;
   display: inline-block;
   vertical-align: top;
-  width: 39px;
   height: 38px;
   font-size: 0;
   text-decoration: none;
@@ -547,10 +548,9 @@ body {
 
 .search-third-row .minus-button {
   position: absolute;
-  right: 127px;
+  right: 373px;
   display: inline-block;
   vertical-align: top;
-  width: 39px;
   height: 38px;
   font-size: 0;
   text-decoration: none;
@@ -561,10 +561,9 @@ body {
 
 .search-fourth-row .minus-button {
   position: absolute;
-  right: 360px;
+  right: 143px;
   display: inline-block;
   vertical-align: top;
-  width: 39px;
   height: 38px;
   font-size: 0;
   text-decoration: none;
@@ -632,8 +631,9 @@ body {
 }
 
 .search-fourth-row input:focus {
-  width: 21px;
+  width: 25px;
   height: 34px;
+  padding-left: 53px;
 	background: rgb(255, 255, 255);
   border: 2px solid rgb(235, 235, 235);
 }
@@ -718,15 +718,33 @@ body {
 }
 
 input::-moz-placeholder {
-  color: black;
+  color: rgba(0, 0, 0, 1);
+  opacity: inherit;
+}
+
+input:-moz-placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: inherit;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: inherit;
+}
+
+input:placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: inherit;
 }
 
 input::-webkit-input-placeholder {
-  color: black;
+  color: rgba(0, 0, 0, 1);
+  opacity: inherit;
 }
 
 input:-ms-input-placeholder {
-  color: black;
+  color: rgba(0, 0, 0, 1);
+  opacity: inherit;
 }
 
 /*Каталог*/
@@ -816,7 +834,9 @@ input:-ms-input-placeholder {
   width: 25px;
   height: 25px;
   content: "";
-  background: url(../img/checkboxoff.png) no-repeat;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -173px -10px;
 }
 
 .search-form-small-basis input[type="checkbox"]:checked + label::after {
@@ -827,7 +847,9 @@ input:-ms-input-placeholder {
   width: 25px;
   height: 25px;
   content: "";
-  background: url(../img/checkboxon.png) no-repeat;
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -349px -10px;
 }
 
 .filter-range {
@@ -880,6 +902,7 @@ input:-ms-input-placeholder {
 .price-controls input {
   display: inline-block;
   width: 50px;
+  height: 32px;
   margin: 0;
   font: inherit;
   color: inherit;

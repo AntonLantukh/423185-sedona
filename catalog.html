@@ -36,7 +36,7 @@
           <form class="search-form-small clearfix" action="#" method="post">
             <div class="search-form-small-basis search-form-small-left">
               <h2 class="minor-header-form">Инфраструктура:</h2>
-              <input type="checkbox" disabled name="pool" id="pool">
+              <input type="checkbox" name="pool" id="pool" checked>
               <label for="pool">Бассейн</label>
               <input type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
@@ -45,11 +45,11 @@
             </div>
             <div class="search-form-small-basis search-form-small-middle">
               <h2 class="minor-header-form">Тип жилья:</h2>
-              <input type="checkbox" name="hotel" id="hotel">
+              <input type="checkbox" name="hotel" id="hotel" checked>
               <label for="hotel">Гостиница</label>
-              <input type="checkbox" name="motel" id="motel">
+              <input type="checkbox" name="motel" id="motel" checked>
               <label for="motel">Мотель</label>
-              <input type="checkbox" name="apartments" id="apartments">
+              <input type="checkbox" name="apartments" id="apartments" checked>
               <label for="apartments">Апартаменты</label>
             </div>
             <div class="search-form-small-basis search-form-small-right">
@@ -76,8 +76,8 @@
             <span class= "search-found">Найдено: 3</span>
             <span class="sorting-header">Сортировка:</span>
             <ul class= "sorting">
-              <li class="sorting-element">
-                <a href="#">По цене</a>
+              <li class="sorting-element sorting-active">
+                <a>По цене</a>
               </li>
               <li class="sorting-element">
                 <a href="#">По типу</a>
@@ -88,7 +88,7 @@
             </ul>
           </div>
           <div class="search-result-right clearfix">
-            <a class="down-button" href="#">Вниз</a>
+            <a class="down-button active-button" href="#">Вниз</a>
             <a class="up-button" href="#">Вверх</a>
           </div>
         </div>
@@ -100,9 +100,9 @@
               </div>
               <div class="hotel-description">
                 <a class= "hotel-name" href="#">Amara resort & spa</a>
-                <div class="article-text">
+                <div class="article-text clearfix">
                   <div class="article-info">Гостиница</div>
-                  <div class="article-price-amara">От 4000 р.</div>
+                  <div class="article-price">От 4000 р.</div>
                 </div>
                 <div class="btn">
                   <a class="more-btn" href="#">Подробнее</a>
@@ -113,10 +113,10 @@
             <div class="right-article-type">
               <div class="stars-block">
                 <ul class="stars-list">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>star</li>
+                  <li>star</li>
+                  <li>star</li>
+                  <li>star</li>
                 </ul>
               </div>
               <span class="rate">Рейтинг: 8,5</span>
@@ -129,9 +129,9 @@
               </div>
               <div class="hotel-description">
                 <a class= "hotel-name" href="#">Desert quail inn</a>
-                <div class="article-text">
+                <div class="article-text clearfix">
                   <div class="article-info">Мотель</div>
-                  <div class="article-price-desert">От 3000 р.</div>
+                  <div class="article-price">От 3000 р.</div>
                 </div>
                 <div class="btn">
                   <a class="more-btn" href="#">Подробнее</a>
@@ -142,9 +142,9 @@
             <div class="right-article-type">
               <div class="stars-block">
                 <ul class="stars-list">
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  <li>star</li>
+                  <li>star</li>
+                  <li>star</li>
                 </ul>
               </div>
               <span class="rate">Рейтинг: 8,9</span>
@@ -157,9 +157,9 @@
               </div>
               <div class="hotel-description">
                 <a class= "hotel-name" href="#">Villas at poco diablo</a>
-                <div class="article-text">
+                <div class="article-text clearfix">
                   <div class="article-info">Апартаменты</div>
-                  <div class="article-price-villas">От 2000 р.</div>
+                  <div class="article-price">От 2000 р.</div>
                 </div>
                 <div class="btn">
                   <a class="more-btn" href="#">Подробнее</a>
@@ -170,8 +170,8 @@
             <div class="right-article-type">
               <div class="stars-block">
                 <ul class="stars-list">
-                  <li></li>
-                  <li></li>
+                  <li>star</li>
+                  <li>star</li>
                 </ul>
               </div>
               <span class="rate">Рейтинг: 9,2</span>

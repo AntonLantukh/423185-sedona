@@ -359,10 +359,15 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.model-content-show {
+  display: none;
+}
+
 .search-basis {
   position: absolute;
   left: 315px;
   top: -3px;
+  display: block;
   width: 568px;
   background-color: rgb(255, 255, 255);
   box-shadow:
@@ -1547,4 +1552,3 @@ input:-ms-input-placeholder {
   height: 16px;
   background-position: -1159px -10px;
 }
-1

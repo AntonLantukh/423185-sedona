@@ -40,7 +40,8 @@ if (childreninput) {
 form.addEventListener("submit", function(evt){
   if (!datein.value || !dateout.value || !adults.value || !children.value) {
    evt.preventDefault();
-   console.log("Нет данных");
+   popup.offsetWidth = popup.offsetWidth;
+   popup.classList.toggle("modal-error");
 } else {
    localStorage.setItem("datein", datein.value);
    localStorage.setItem("dateout", dateout.value);
